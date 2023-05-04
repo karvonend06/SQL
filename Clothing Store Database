@@ -1,0 +1,25 @@
+-- Create a store database
+
+CREATE TABLE DLH_Clothing_Co (id INTEGER PRIMARY KEY, name TEXT, size TEXT, color TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO DLH_Clothing_Co VALUES (1, "DLH logo", "S", "Pink", 15, 3);
+INSERT INTO DLH_Clothing_Co VALUES (2, "DLH logo", "M", "Pink", 15, 4);
+INSERT INTO DLH_Clothing_Co VALUES (3, "DLH logo", "L", "Pink", 15, 2);
+INSERT INTO DLH_Clothing_Co VALUES (4, "DLH logo", "S", "Blue", 15, 5);
+INSERT INTO DLH_Clothing_Co VALUES (5, "DLH logo", "M", "Blue", 15, 2);
+INSERT INTO DLH_Clothing_Co VALUES (6, "DLH logo", "L", "Blue", 15, 3);
+INSERT INTO DLH_Clothing_Co VALUES (7, "DLH logo long sleeve", "S", "White", 30, 3);
+INSERT INTO DLH_Clothing_Co VALUES (8, "DLH logo long sleeve", "M", "White", 30, 4);
+INSERT INTO DLH_Clothing_Co VALUES (9, "DLH logo long sleeve", "L", "White", 30, 2);
+INSERT INTO DLH_Clothing_Co VALUES (10, "DLH logo sweatshirt", "S", "Grey", 45, 3);
+INSERT INTO DLH_Clothing_Co VALUES (11, "DLH logo sweatshirt", "M", "Grey", 45, 4);
+INSERT INTO DLH_Clothing_Co VALUES (12, "DLH logo sweatshirt", "L", "Grey", 45, 1);
+INSERT INTO DLH_Clothing_Co VALUES (13, "DLH logo tanktop", "S", "Black", 20, 3);
+INSERT INTO DLH_Clothing_Co VALUES (14, "DLH logo tanktop", "M", "Black", 20, 4);
+INSERT INTO DLH_Clothing_Co VALUES (15, "DLH logo tanktop", "L", "Black", 20, 1);
+
+--display the database ordered by price
+SELECT * FROM DLH_Clothing_Co ORDER BY price;
+
+--what is the total value of merchandise in the store? 
+SELECT SUM(quantity) FROM DLH_Clothing_Co;
